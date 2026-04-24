@@ -1,0 +1,27 @@
+# Ambiente virtual
+venv/
+.env/
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+
+# Modelos (futuro)
+models/*.bin
+models/*.pt
+
+# Uploads (currículos)
+uploads/

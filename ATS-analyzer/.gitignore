@@ -25,3 +25,7 @@ models/*.pt
 
 # Uploads (currículos)
 uploads/
+
+# Arquivos de teste local
+*.pdf
+parse_test.py

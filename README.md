@@ -44,21 +44,35 @@ resume-analyzer/
 
 ---
 
-## 🧪 Como Executar o Projeto
+## 🧪 Como Executar
 
-### 1. Criar ambiente virtual
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/seu-usuario/resume-analyzer.git
+cd resume-analyzer
+```
+
+### 2. Criar e ativar o ambiente virtual
 
 ```bash
 python -m venv venv
+
+# Windows (PowerShell com restrição de política)
+.\venv\Scripts\python.exe -m pip install -r requirements.txt
+
+# Linux / macOS
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
-### 2. Instalar dependências
+### 3. Instalar o modelo de linguagem do spaCy
 
 ```bash
-pip install fastapi uvicorn streamlit scikit-learn spacy pdfplumber
+.\venv\Scripts\python.exe -m spacy download pt_core_news_sm
 ```
 
-### 3. Executar a API
+### 4. Executar a API
 
 ```bash
 .\venv\Scripts\python.exe -m uvicorn app.main:app --reload
@@ -73,25 +87,22 @@ pip install fastapi uvicorn streamlit scikit-learn spacy pdfplumber
 
 ---
 
-## 📌 Funcionalidades (em desenvolvimento)
 
-* Upload de currículo (PDF)
-* Extração de texto
-* Análise de palavras-chave
-* Cálculo de score de compatibilidade
-* Feedback inteligente com IA
+## 📌 Funcionalidades
 
+- [x] Estrutura do projeto organizada
+- [x] API base com FastAPI
+- [x] Parser de currículo PDF (`core/parser.py`)
+- [ ] Extração de entidades com spaCy (`core/nlp.py`)
+- [ ] Comparação currículo × vaga (`core/matcher.py`)
+- [ ] Score de compatibilidade 0–100 (`core/scorer.py`)
+- [ ] Feedback inteligente com IA (`core/feedback.py`)
+- [ ] Interface web com Streamlit
 ---
 
-## 📈 Próximos Passos
 
-* Implementar parser de currículo
-* Adicionar similaridade semântica (embeddings)
-* Criar interface com Streamlit
-* Gerar sugestões automáticas de melhoria
-
----
 
 ## 👨‍💻 Autor
 
 Gabriel Cavalcante
+[LinkedIn](https://www.linkedin.com/in/gabrielcant/) · [GitHub](https://github.com/GabsCavalcant)

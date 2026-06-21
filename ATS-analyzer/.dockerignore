@@ -1,0 +1,5 @@
+﻿ats-analyzer-ui/node_modules
+ats-analyzer-ui/.next
+venv
+__pycache__
+*.pyc

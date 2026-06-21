@@ -1,0 +1,12 @@
+﻿FROM node:20-alpine
+
+WORKDIR /app
+
+COPY ats-analyzer-ui/package*.json ./
+RUN npm install
+
+COPY ats-analyzer-ui/ .
+
+EXPOSE 3000
+
+CMD ["npm", "run", "dev"]

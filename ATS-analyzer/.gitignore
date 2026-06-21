@@ -30,3 +30,9 @@ uploads/
 # Arquivos de teste local
 *.pdf
 parse_test.py
+ats-analyzer-ui/node_modules
+ats-analyzer-ui/public/placeholder*
+
+ats-analyzer-ui/node_modules
+
+ats-analyzer-ui/.next

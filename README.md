@@ -93,11 +93,11 @@ pip install -r requirements.txt
 - [x] Estrutura do projeto organizada
 - [x] API base com FastAPI
 - [x] Parser de currículo PDF (`core/parser.py`)
-- [ ] Extração de entidades com spaCy (`core/nlp.py`)
-- [ ] Comparação currículo × vaga (`core/matcher.py`)
-- [ ] Score de compatibilidade 0–100 (`core/scorer.py`)
-- [ ] Feedback inteligente com IA (`core/feedback.py`)
-- [ ] Interface web com Streamlit
+- [X] Extração de entidades com spaCy (`core/nlp.py`)
+- [X] Comparação currículo × vaga (`core/matcher.py`)
+- [X] Score de compatibilidade 0–100 (`core/scorer.py`)
+- [X] Feedback inteligente com IA (`core/feedback.py`)
+- [X] Interface web com Streamlit
 ---
 
 
